@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hidro Clean</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link href="../style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <a href="" class="navbar-brand" href="#"><img src="../img/LOGOv3.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResposive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto"></ul>
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../secciones/servicios.html" class="nav-link">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../secciones/galeria.html" class="nav-link">Galeria</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../secciones/presupuerto.html" class="nav-link">Presupuesto</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../secciones/nosotros.html" class="nav-link">Nosotros</a>
+                </li>
+
+            </div>
+        </div>
+    </nav>
+
+    <!--- Welcome Section -->
+    <div class="container-fluid padding">
+        <div class="row welcome text-center">
+            <div class="col-12">
+                <h1 class="display-4">Contacto</h1>
+            </div>
+            <hr>
+            <div class="col-12">
+                <p class="lead">Desde aqui se puede completar el formularia el cual sera recibido por nuestros
+                    operadores que se estaran contactando con usted para organizar la visita.</p>
+            </div>
+        </div>
+
+
+        <!-- FORMULARIO -->
+
+
+        <form action="guardar.php" method="POST" class="container-fluid">
+            <fieldset class="formulario text-center">
+                <legend>Informacion cliente</legend>
+                <div>
+                    <label for="nombre">Nombre y Apellido</label>
+                    <input type="text" name="nombre">
+                </div>
+                <div>
+                    <label for="direccion">Direccion</label>
+                    <input type="text" name="direccion"></input>
+                </div>
+
+                <div>
+                    <label for="telefono">Telefono</label>
+                    <input type="number" name="telefono"></input>
+                    <div>
+
+                        <div>
+                            <label for="horario">Horario de contacto</label>
+                            <input type="checkbox" name="horario" value="maniana"> 9 a 13
+                            <input type="checkbox" name="horario" value="tarde"> 13 a 17
+                            <input type="checkbox" name="horario" value="noche"> 17 a 21
+                        </div>
+
+                        <div>
+                            <label for="servicio">Servicio</label>
+                            <select name="servicio">
+                                <option value=""></option>
+                                <option value="vereda">Limpieza de vereda</option>
+                                <option value="techo">Limpieza de techo</option>
+                                <option value="completo">Limpieza general</option>
+                            </select>
+
+                            <div>
+                                <label for="subir">Adjuntar imagen</label>
+                                <input type="file" name="subir" />
+                            </div>
+
+
+                            <div>
+                                <input type="reset" value="Limpiar formulario">
+                                <input type="submit" value="Enviar formulario">
+                            </div>
+
+            </fieldset>
+
+            <hr class="my-4">
+
+
+
+
+            <!--- Connect -->
+            <div class="container-fluid padding">
+                <div class="row text-center padding">
+                    <div class="col-12">
+                        <h2>Redes</h2>
+                    </div>
+                    <div class="col-12 social padding">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!--- Footer -->
+            <footer class="conteiner-fluid padding">
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <hr class="light">
+                        <h5>Contacto</h5>
+                        <hr class="light">
+                        <p>116-333-3333</p>
+                        <p>email@hidroclean.com.ar</p>
+                        <p>Direccion - localidad - provincia</p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <hr class="light">
+                        <h5>horarios</h5>
+                        <hr class="light">
+                        <p>Lunes: 9 - 17</p>
+                        <p>Sabados: 10 - 16</p>
+                        <p>domingos: cerrado</p>
+                    </div>
+                    <div class="col-md-4">
+                        <hr class="light">
+                        <h5>Zonas</h5>
+                        <hr class="light">
+                        <p>Direccion - localidad - provincia</p>
+                        <p>Direccion - localidad - provincia</p>
+                        <p>Direccion - localidad - provincia</p>
+                    </div>
+                    <div class="col-12">
+                        <hr class="light-100">
+                        <h5>&copy; hidroclean.com</h5>
+                    </div>
+
+
+
+            </footer>
+
+
+
+</body>
+
+</html>
